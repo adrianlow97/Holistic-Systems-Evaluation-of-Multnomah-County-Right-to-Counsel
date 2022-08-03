@@ -1,0 +1,203 @@
+{UTF-8}
+landlord system  = A FUNCTION OF( court results,educational outreach,housing market system\
+		,tenant finding new housing)
+	~	
+	~		|
+
+tenant choice to go to court  = A FUNCTION OF( educational outreach,T ability to find new housing\
+		,T ability to provide attorney,tenant given eviction notice,tenant system)
+	~	
+	~		|
+
+mediation services  = A FUNCTION OF( Tenant Resouce Office system)
+	~	
+	~		|
+
+mental health counseling  = A FUNCTION OF( Tenant Resouce Office system)
+	~	
+	~		|
+
+tenant given eviction notice  = A FUNCTION OF( landlord system,mediation services,Multnomah County Circuit Court System\
+		)
+	~	
+	~		|
+
+T mental and physical health  = A FUNCTION OF( court results,mediation services,mental health counseling\
+		,tenant system)
+	~	
+	~		|
+
+tenant finding new housing  = A FUNCTION OF( court results,mediation services,rental assistance\
+		,T ability to find new housing,tenant system)
+	~	
+	~		|
+
+tenant system  = A FUNCTION OF( )
+	~	
+	~		|
+
+homelessness system  = A FUNCTION OF( T ability to find new housing)
+	~	
+	~		|
+
+T financial state  = A FUNCTION OF( court results,T mental and physical health,tenant system\
+		)
+	~	
+	~		|
+
+court results  = A FUNCTION OF( T ability to provide attorney,tenant choice to go to court\
+		)
+	~	
+	~		|
+
+educational outreach  = A FUNCTION OF( Tenant Resouce Office system)
+	~	
+	~		|
+
+Tenant Resouce Office system  = A FUNCTION OF( Multnomah County Circuit Court System)
+	~	
+	~		|
+
+T ability to provide attorney  = A FUNCTION OF( T financial state,Tenant Resouce Office system\
+		)
+	~	
+	~		|
+
+rental assistance  = A FUNCTION OF( Tenant Resouce Office system)
+	~	
+	~		|
+
+Multnomah County Circuit Court System  = A FUNCTION OF( )
+	~	
+	~		|
+
+T ability to find new housing  = A FUNCTION OF( median rent for new renters,T financial state\
+		)
+	~	
+	~		|
+
+median rent for new renters  = A FUNCTION OF( housing market system)
+	~	
+	~		|
+
+housing market system  = A FUNCTION OF( )
+	~	
+	~		|
+
+********************************************************
+	.Control
+********************************************************~
+		Simulation Control Parameters
+	|
+
+FINAL TIME  = 100
+	~	Month
+	~	The final time for the simulation.
+	|
+
+INITIAL TIME  = 0
+	~	Month
+	~	The initial time for the simulation.
+	|
+
+SAVEPER  = 
+        TIME STEP
+	~	Month [0,?]
+	~	The frequency with which output is stored.
+	|
+
+TIME STEP  = 1
+	~	Month [0,?]
+	~	The time step for the simulation.
+	|
+
+\\\---/// Sketch information - do not modify anything except names
+V300  Do not put anything below this section - it will be ignored
+*View 1
+$192-192-192,0,Arial Unicode MS|12||0-0-0|0-0-0|0-0-255|-1--1--1|255-255-255|96,96,90,0
+10,1,landlord system,324,600,43,43,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,2,Multnomah County Circuit Court System,322,219,61,61,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,3,tenant system,795,240,54,54,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,4,housing market system,526,601,39,39,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,5,median rent for new renters,719,605,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,6,tenant given eviction notice,323,467,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,7,court results,1092,499,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,8,tenant choice to go to court,645,471,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,9,6,8,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+10,10,T financial state,922,338,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,11,T ability to provide attorney,775,391,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,12,10,11,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,13,11,7,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,14,11,8,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+10,15,T ability to find new housing,941,607,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,16,10,15,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,17,8,7,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,18,7,10,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,19,1,6,0,0,0,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,20,7,1,1,0,45,0,2,64,0,-1--1--1,|||0-0-0,1|(913,721)|
+1,21,4,5,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,22,4,1,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,23,5,15,0,0,45,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+10,24,homelessness system,729,703,51,51,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,25,3,10,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,26,2,6,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,27,3,8,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+10,28,tenant finding new housing,1244,286,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,29,7,28,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,30,3,28,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,31,28,1,1,0,45,0,2,192,0,-1--1--1,|||0-0-0,1|(974,758)|
+1,32,15,8,0,0,45,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,33,15,24,0,0,45,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,34,15,28,1,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(1155,608)|
+10,35,Tenant Resouce Office system,502,224,58,58,6,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,36,rental assistance,667,226,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+10,37,educational outreach,419,361,75,30,8,3,0,16,-1,0,0,0,-1--1--1,0-0-0,||B|0-0-0,0,0,0,0,0,0
+1,38,2,35,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,39,35,37,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,40,35,36,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,41,35,11,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,42,36,28,1,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(951,154)|
+10,43,T mental and physical health,1096,336,75,30,8,3,0,0,-1,0,0,0,0,0,0,0,0,0
+1,44,7,43,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,45,43,10,0,0,43,0,2,192,0,-1--1--1,|||0-0-0,1|(0,0)|
+1,46,3,43,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,47,37,8,0,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(0,0)|
+1,48,37,1,1,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(220,512)|
+10,49,mediation services,577,361,75,30,8,3,0,16,-1,0,0,0,-1--1--1,0-0-0,||B|0-0-0,0,0,0,0,0,0
+1,50,49,6,0,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(0,0)|
+1,51,49,28,1,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(831,66)|
+1,52,49,43,0,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(0,0)|
+10,53,mental health counseling,502,94,75,30,8,3,0,16,-1,0,0,0,-1--1--1,0-0-0,||B|0-0-0,0,0,0,0,0,0
+1,54,35,49,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,55,35,53,0,0,0,0,0,192,0,-1--1--1,,1|(0,0)|
+1,56,53,43,1,0,0,12,3,192,0,255-0-0,|||-1--1--1,1|(863,180)|
+///---\\\
+:L<%^E!@
+5:T mental and physical health
+9:current
+19:90,0
+24:0
+25:0
+26:0
+23:0
+15:0,0,0,0,0,0
+27:0,
+34:0,
+42:0
+72:0
+73:0
+95:0
+96:0
+97:0
+77:0
+78:0
+102:0
+93:0
+94:0
+92:0
+91:0
+90:0
+87:0
+75:
+43:
+103:8,8,8,3,8
